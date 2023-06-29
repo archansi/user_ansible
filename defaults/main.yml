@@ -1,0 +1,10 @@
+---
+# user_ansible/defaults/main.yml
+
+user:
+  ansible:
+    login: ansi
+    group: wheel
+    shell: /bin/nologin
+    home: /home/ansi
+    key: "ssh-ed25519 AAAA0"
