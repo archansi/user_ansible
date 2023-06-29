@@ -1,0 +1,9 @@
+---
+# https://docs.ansible.com/ansible/latest/collections/ansible/posix/authorized_key_module.html
+
+- name: Set authorized key taken from current user
+  ansible.posix.authorized_key:
+    user: "{{ user.ansible.login }}"
+    key: "{{ user.ansible.key }}"
+    path: "/home/{{ user.ansible.login }}/.ssh/authorized_keys"
+    state: present
