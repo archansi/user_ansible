@@ -1,0 +1,6 @@
+---
+# https://galaxy.ansible.com/docs/contributing/creating_role.html#role-metadata
+
+dependencies:
+  - role: pac_rsync
+  - role: pac_doas
