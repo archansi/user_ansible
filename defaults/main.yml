@@ -4,7 +4,9 @@
 user:
   ansible:
     login: ansi
-    group: wheel
     shell: /bin/nologin
+    group: ansi
     home: /home/ansi
+    groups:
+      - wheel
     key: "ssh-ed25519 AAAA0"
