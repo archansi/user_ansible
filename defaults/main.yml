@@ -3,10 +3,13 @@
 
 user:
   ansible:
+    uid: 1000
+    gid: 1000
     login: ansi
     group: ansi
     home: /home/ansi
     groups:
       - wheel
     shell: /bin/nologin
+    hash: "!*"
     key: "ssh-ed25519 AAAA0"
