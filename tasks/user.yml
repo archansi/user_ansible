@@ -5,6 +5,9 @@
   ansible.builtin.user:
     state: present
     name: "{{ user.ansible.login }}"
-    group: "{{ user.ansible.group }}"
+    group: "{{ user.ansible.login }}"
+    groups: "{{ user.ansible.groups }}"
     shell: "{{ user.ansible.shell }}"
     home: "{{ user.ansible.home }}"
+    password: "{{ user.ansible.hash }}"
+    uid: "{{ user.ansible.uid }}"
